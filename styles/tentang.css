@@ -1,0 +1,644 @@
+*{
+    scroll-behavior: smooth;
+}
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    z-index: 100;
+}
+
+/* Nav */
+nav {
+    min-width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: 0.3s;
+    background-color: #fff;
+}
+
+.logo {
+    width: 200px;
+    margin: -50px;
+    transition: 0.3s;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+
+.navlink {
+    list-style: none;
+    margin: 0;
+}
+
+.navlink a {
+    color: #121212;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9em;
+    position: relative;
+}
+
+.navlink a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    border-radius: 4px;
+    background-color: #18272F;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+
+.navlink a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.burger {
+    font-size: 1.2em;
+    display: none;
+    margin-right: -60px;
+    z-index: 1000;
+}
+
+.donasi-box {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+}
+
+.donasi-btn {
+    width: 100px;
+    height: 42px;
+    line-height: 41px;
+    font-size: 0.8em;
+    text-decoration: none;
+    background-color: #121212;
+    border-radius: 20px;
+    text-align: center;
+    color: #f1f1f1;
+    font-weight: 500;
+}
+
+.responsive-btn {
+    display: none;
+}
+
+/* Header */
+.header-container{
+    max-width: 100%;
+    height:  100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-text-container{
+    text-align: center;
+}
+
+.header-text-container .title{
+    font-size: 3.5em;
+    max-width: 800px;
+    margin-top: 100px;
+}
+
+.header-subtitle{
+    max-width: 800px;
+    font-size: 1.1em;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    word-wrap: wrap;
+    font-family: 'Nunito', sans-serif;
+    color: #121212;
+}
+
+.header-image-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.header-image-column .header-image{
+    width: 315px;
+    height: 466px;
+    object-fit: contain;
+}
+
+.header-image-row .header-image{
+    width: 359px;
+    height: 223px;
+    object-fit: cover;
+    display: block;
+}
+
+.h-1{
+    border-radius: 30px 0px 0px 30px;
+}
+
+.h-2{
+    margin: 0px 15px 15px 15px
+}
+
+.h-3{
+    margin: 15px 15px 0px 15px;
+}
+
+.h-4{
+    border-radius: 0px 30px 30px 0px;
+}
+
+/* Tentang */
+.tentang-container{
+    max-width: 1400px;
+    height: auto;
+    margin: 10px 100px;
+    background-color: #121212;
+    display: flex;
+    flex-direction: row;
+    border-radius: 40px;
+}
+
+.tentang-box{
+    width: 90%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.tentang-text{
+    width: 80%;
+    font-size: 1.1em;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    word-wrap: wrap;
+    font-family: 'Nunito', sans-serif;
+    color: #121212;
+}
+
+.visi-misi-box{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0px 90px;
+}
+
+.visi-box{
+    width: 250px;
+    height: 351px;
+    background-color: #1E1E1E;
+    padding: 50px 50px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.misi-box{
+    width: 590px;
+    min-height: 351px;
+    background-color: #0258F8;
+    padding: 50px 50px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.visi-text{
+    font-size: 1.2em;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    line-height: 30px;
+    word-wrap: wrap;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    color: #121212;
+}
+
+.misi-text{
+    font-size: 1.2em;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    line-height: 40px;
+    word-wrap: wrap;
+    font-family: 'Nunito', sans-serif;
+    color: #121212;
+}
+
+/* Partners */
+.partners-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 35px 0px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.partners-list{
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Content */
+.content {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 35px 0px;
+    flex-wrap: wrap;
+}
+
+
+/* FAQ */
+.faq-container {
+    align-items: flex-start;
+    margin: 0px;
+}
+
+.accordion {
+    max-width: 540px;
+    overflow: hidden;
+    position: relative;
+    border: 2px solid #121212;
+    border-radius: 5px;
+    margin: 10px 15px
+}
+
+
+.accordion input {
+    position: absolute;
+    z-index: -1;
+}
+
+.accordion label {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background: #ffffff;
+    cursor: pointer;
+}
+
+.accordion .faq-ans {
+    max-height: 0px;
+    padding: 0 15px;
+    transition: all 0.35s;
+}
+
+.rotate {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    transition: 0.25s;
+}
+
+.accordion input[type="checkbox"]:checked~.rotate {
+    transform: rotate(-180deg);
+}
+
+.accordion input[type="checkbox"]:checked~.faq-ans {
+    max-height: 100vh;
+    padding: 15px;
+}
+
+.faq-title .align-left{
+    text-align: left;
+}
+
+.faq-title {
+    padding: 0px 230px;
+    margin-top: 30px;
+}
+
+/* Footer */
+section {
+    padding: 60px 0;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.contact-area {
+    border-bottom: 1px solid #353C46;
+}
+
+.contact-content p {
+    font-size: 15px;
+    margin: 30px 0 60px;
+    position: relative;
+}
+
+.contact-social {
+    margin-top: 30px;
+}
+
+.footer-page > ul{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+
+.footer-page a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9em;
+    position: relative;
+    margin: 30px;
+}
+
+.footer-page a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    border-radius: 4px;
+    background-color: #fff;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+
+.footer-page a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.contact-social > ul {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.contact-social ul li a {
+    color: #8b9199;
+    display: inline-block;
+    height: 40px;
+    margin: 0 10px;
+    padding-top: 7px;
+    transition: all 0.4s ease 0s;
+    width: 40px;
+    font-size: 20px;
+}
+
+.contact-social ul li a:hover {
+    color: #aeb4be;
+}
+
+.contact-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact-content img {
+    max-width: 260px;
+    margin: 0px 0px 40px 0px;
+}
+
+section, footer {
+    background: #121212;
+    color: #868c96;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+footer p {
+    text-align: center;
+}
+
+.copyright {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Component */
+.title {
+    font-size: 2.2em;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.text {
+    width: 440px;
+    font-size: 1.1em;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    word-wrap: wrap;
+    font-family: 'Nunito', sans-serif;
+    color: #121212;
+}
+
+.basic-btn {
+    width: 130px;
+    height: 45px;
+    margin: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 500;
+    line-height: 45px;
+    font-size: 0.8em;
+    color: #f1f1f1;
+    border-radius: 5px;
+}
+
+.gabung-btn {
+    background-color: #0258F8;
+}
+
+.selengkapnya-btn {
+    background-color: #121212;
+}
+
+.blue{
+    color: #0258F8;
+}
+
+.light{
+    color:#ffffff;
+}
+
+.dark{
+    color:#121212
+}
+
+.dark-bg{
+    background-color: #121212;
+}
+
+.column{
+    flex-direction: column;
+}
+
+
+@media screen and (max-width: 678px) {
+    .faq-title {
+        padding: 0px;
+    }
+
+    .faq-title .title{
+        text-align: center;
+    }
+    
+    .burger {
+        display: block;
+        z-index: 1;
+    }
+
+    .nav {
+        margin: 0;
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        right: -100%;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
+        transition: all 400ms;
+        background-color: rgb(18, 18, 18);
+        z-index: 500;
+    }
+
+    .navlink {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        margin-top: 60px;
+        font-size: 20px;
+    }
+
+    .navlink a {
+        color: #f1f1f1;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 1.1em;
+    }
+
+    .nav-active {
+        right: 0;
+    }
+
+    .responsive-btn {
+        display: block;
+        text-align: center;
+    }
+
+    .normal-btn {
+        display: none;
+    }
+
+    .background-outline {
+        height: 80%;
+    }
+
+    .content {
+        padding: 50px 0px;
+    }
+
+    .text {
+        width: 95%;
+        font-size: 1.2em;
+    }
+    
+    .resize-image {
+        width: 400px;
+        padding: 0;
+    }
+
+    .mulai-berjualan {
+        margin-right: 10px;
+    }
+    
+    .logo {
+        width: 180px;
+        margin: -50px;
+        transition: 0.3s;
+    }
+
+    .h-1, .h-4{
+        display: none;
+    }
+
+    .h-2, .h-3{
+        border-radius: 10px;
+    }
+
+    .header-container .title{
+        font-size: 3em;
+        margin-top: 50px;
+    }
+
+    .accordion label{
+        width: 80%;
+    }
+    
+    .tentang-container{
+        margin: 10px 0px;
+        border-radius: 0px;
+    }
+
+    .misi-box{
+        margin: 20px 25px;
+    }
+
+    .partners-list{
+        width: auto;
+    }
+}

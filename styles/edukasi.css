@@ -1,0 +1,746 @@
+*{
+    scroll-behavior: smooth;
+}
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    z-index: 100;
+}
+
+/* Nav */
+nav {
+    min-width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: 0.3s;
+    background-color: #fff;
+}
+
+.logo {
+    width: 200px;
+    margin: -50px;
+    transition: 0.3s;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+
+.navlink {
+    list-style: none;
+    margin: 0;
+}
+
+.navlink a {
+    color: #121212;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9em;
+    position: relative;
+}
+
+.navlink a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    border-radius: 4px;
+    background-color: #18272F;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+
+.navlink a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.burger {
+    font-size: 1.2em;
+    display: none;
+    margin-right: -60px;
+    z-index: 1000;
+}
+
+.donasi-box {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+}
+
+.donasi-btn {
+    width: 100px;
+    height: 42px;
+    line-height: 41px;
+    font-size: 0.8em;
+    text-decoration: none;
+    background-color: #121212;
+    border-radius: 20px;
+    text-align: center;
+    color: #f1f1f1;
+    font-weight: 500;
+}
+
+.responsive-btn {
+    display: none;
+}
+
+/* Header */
+.header {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.header-component{
+    margin-right: 70px;
+}
+
+.header-title {
+    text-align: left;
+    color: #121212;
+    font-size: 3.5em;
+    font-weight: 800;
+    font-family: 'Nunito', sans-serif;
+}
+
+.berjualan-container {
+    display: inline-flex;
+    align-items: center;
+    flex-direction: space-between;
+}
+
+.mulai-berjualan {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-right: 30px;
+}
+
+.header-video {
+    max-width: 600px;
+    height: 385px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.video-container {
+    margin: 0px 20px;
+}
+
+.video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 20px;
+}
+
+.header-text {
+    width: 480px;
+    font-size: 1.1em;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    word-wrap: wrap;
+    font-family: 'Nunito', sans-serif;
+    color: #121212;
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0px;
+}
+
+/* Kelas */
+.class-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.kelas-component, .kelas-component-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.kelas-box {
+    width: 300px;
+    height: 320px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 50px;
+    border-radius: 10px;
+    margin: 30px 30px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    transition: 0.4s;
+}
+
+.kelas-component-2 .kelas-box {
+    width: 300px;
+    height: 220px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 50px;
+    border-radius: 10px;
+    margin: 30px 30px;
+    padding: 20px 20px 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    transition: 0.4s;
+}
+
+.nama-kelas {
+    font-size: 24px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+}
+
+.deskripsi-kelas {
+    font-family: 'Nunito', sans-serif;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.getstarted-btn {
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 500;
+    line-height: 40px;
+    font-size: 0.9em;
+    color: #f1f1f1;
+    border-radius: 5px;
+}
+
+.text-centered {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    font-weight: 400;
+    word-wrap: wrap;
+    font-family: 'Nunito', sans-serif;
+    color: #121212;
+}
+
+.text-centered-title {
+    text-align: center;
+}
+
+.calendar{
+    width: 100%;
+    padding: 5px 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.time{
+    width: 100%;
+    padding: 5px 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.icon{
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E1EAF1;
+    border-radius: 5px;
+}
+
+.schedule-text{
+    margin-left: 8px;
+    font-size: 1.0em;
+    font-weight: 700;
+    word-wrap: wrap;
+    font-family: 'Nunito', sans-serif;
+    color: #121212;
+}
+
+.split-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.split-class{
+    width: 200px;
+    height: 3px;
+    background-color: #E1EAF1;
+}
+
+/* Content */
+.content {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 35px 0px;
+    flex-wrap: wrap;
+}
+
+/* FAQ */
+.faq-container {
+    align-items: flex-start;
+    margin: 0px;
+}
+
+.accordion {
+    max-width: 540px;
+    overflow: hidden;
+    position: relative;
+    border: 2px solid #121212;
+    border-radius: 5px;
+    margin: 10px 15px
+}
+
+
+.accordion input {
+    position: absolute;
+    z-index: -1;
+}
+
+.accordion label {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background: #ffffff;
+    cursor: pointer;
+}
+
+.accordion .faq-ans {
+    max-height: 0px;
+    padding: 0 15px;
+    transition: all 0.35s;
+}
+
+.rotate {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    transition: 0.25s;
+}
+
+.accordion input[type="checkbox"]:checked~.rotate {
+    transform: rotate(-180deg);
+}
+
+.accordion input[type="checkbox"]:checked~.faq-ans {
+    max-height: 100vh;
+    padding: 15px;
+}
+
+.faq-title .align-left{
+    text-align: left;
+}
+
+.faq-title {
+    padding: 0px 230px;
+    margin-top: 30px;
+}
+
+/* Footer */
+section {
+    padding: 60px 0;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.contact-area {
+    border-bottom: 1px solid #353C46;
+}
+
+.contact-content p {
+    font-size: 15px;
+    margin: 30px 0 60px;
+    position: relative;
+}
+
+.contact-social {
+    margin-top: 30px;
+}
+
+.footer-page > ul{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+
+.footer-page a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9em;
+    position: relative;
+    margin: 30px;
+}
+
+.footer-page a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    border-radius: 4px;
+    background-color: #fff;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+
+.footer-page a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.contact-social > ul {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.contact-social ul li a {
+    color: #8b9199;
+    display: inline-block;
+    height: 40px;
+    margin: 0 10px;
+    padding-top: 7px;
+    transition: all 0.4s ease 0s;
+    width: 40px;
+    font-size: 20px;
+}
+
+.contact-social ul li a:hover {
+    color: #aeb4be;
+}
+
+.contact-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact-content img {
+    max-width: 260px;
+    margin: 0px 0px 40px 0px;
+}
+
+section, footer {
+    background: #121212;
+    color: #868c96;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+footer p {
+    text-align: center;
+}
+
+.copyright {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Component */
+.title {
+    font-size: 2.2em;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.text {
+    width: 440px;
+    font-size: 1.1em;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    word-wrap: wrap;
+    font-family: 'Nunito', sans-serif;
+    color: #121212;
+}
+
+.basic-btn {
+    width: 130px;
+    height: 45px;
+    margin: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 500;
+    line-height: 45px;
+    font-size: 0.8em;
+    color: #f1f1f1;
+    border-radius: 5px;
+}
+
+.gabung-btn {
+    background-color: #0258F8;
+}
+
+.selengkapnya-btn {
+    background-color: #121212;
+}
+
+.blue{
+    color: #0258F8;
+}
+
+.light{
+    color:#ffffff;
+}
+
+.dark{
+    color:#121212
+}
+
+.dark-bg{
+    background-color: #121212;
+}
+
+.column{
+    flex-direction: column;
+}
+
+@media screen and (max-width: 678px) {
+    .faq-title {
+        padding: 0px;
+    }
+
+    .faq-title .title{
+        text-align: center;
+    }
+
+    .burger {
+        display: block;
+        z-index: 1;
+    }
+
+    .nav {
+        margin: 0;
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        right: -100%;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
+        transition: all 400ms;
+        background-color: rgb(18, 18, 18);
+        z-index: 500;
+    }
+
+    .navlink {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        margin-top: 60px;
+        font-size: 20px;
+    }
+
+    .navlink a {
+        color: #f1f1f1;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 1.1em;
+    }
+
+    .nav-active {
+        right: 0;
+    }
+
+    .responsive-btn {
+        display: block;
+        text-align: center;
+    }
+
+    .normal-btn {
+        display: none;
+    }
+
+    .background-outline {
+        height: 80%;
+    }
+    
+    .left-component {
+        align-items: center;
+        padding: 0;
+        width: 100%;
+    }
+
+    .right-component {
+        padding: 0px 20px
+    }
+
+    .content {
+        padding: 50px 0px;
+    }
+
+    .text {
+        width: 95%;
+        font-size: 1.2em;
+    }
+    
+    .resize-image {
+        width: 400px;
+        padding: 0;
+    }
+
+    .berjualan-container {
+        display: block;
+    }
+
+    .btn-container{
+        margin: 0px;
+    }
+
+    .mulai-berjualan {
+        padding-left: 10px;
+        margin: 0px;
+        flex-wrap: nowrap;
+    }
+
+    .flip{
+        flex-direction: column-reverse;
+    }
+
+    .komunitas-container{
+        padding: 20px 0px;
+        min-height: 900px;
+    }
+
+    .header{
+        flex-direction: row-reverse;
+    }
+
+    .header-title{
+        font-size: 3em;
+        padding-left: 10px;
+    }
+
+    .header-text{
+        width: 100%;
+        padding: 0px 10px;
+    }
+
+    .header-component{
+        padding-left: 20px;
+        margin: 0;
+    }   
+
+    .header-video{
+        width: 100%;
+        height: auto;
+    }
+
+    .video-container::after {
+        display: none;
+    }
+
+    .video, .video-container{
+        position: static;
+    }
+
+    .logo {
+        width: 180px;
+        margin: -50px;
+        transition: 0.3s;
+    }
+    
+    .header{
+        flex-direction: column-reverse;
+        margin-top: 80px;
+    }
+
+    .header-title{
+        font-size: 3em;
+    }
+
+    .header-text{
+        width: 100%;
+    }
+
+    .header-component{
+        padding: 0px 10px;
+    }   
+
+    .header-video{
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
+
+    .video{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .product-header {
+        margin: 0 20px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .product-box {
+        margin: 20px 0;
+    }
+
+    .quotes .title{
+        font-size: 1.6em;
+        font-weight: 600;
+    }
+/* 
+    .flip .resize-image{
+        width: auto;
+    } */
+}

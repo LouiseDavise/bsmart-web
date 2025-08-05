@@ -4,7 +4,7 @@
 
 ## 📌 About the Project
 **BSmart** is a free educational technology platform designed to empower Indonesian society with accessible and innovative learning opportunities.  
-Since 2011, BSmart has supported the growth of Indonesia’s digital generation by combining **smart technology** with **modern learning experiences**.  
+Since 2023, BSmart has supported the growth of Indonesia’s digital generation by combining **smart technology** with **modern learning experiences**.  
 
 The platform aims to prepare learners with the **skills and knowledge** needed to thrive in today’s digital era, while fostering curiosity, collaboration, and lifelong learning.
 

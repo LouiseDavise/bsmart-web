@@ -1,6 +1,6 @@
 # BSmart — Web HIEDESCOM 2023 Project
 
-[![Website](https://img.shields.io/badge/Visit-Live%20Site-brightgreen)](https://bsmartt.vercel.app/index.html)
+[![Website](https://img.shields.io/badge/Visit-Live%20Site-brightgreen)](https://bsmartid.netlify.app/)
 
 ## 📌 About the Project
 **BSmart** is a free educational technology platform designed to empower Indonesian society with accessible and innovative learning opportunities.  
@@ -8,7 +8,7 @@ Since 2011, BSmart has supported the growth of Indonesia’s digital generation 
 
 The platform aims to prepare learners with the **skills and knowledge** needed to thrive in today’s digital era, while fostering curiosity, collaboration, and lifelong learning.
 
-🌐 **Live Website:** [bsmartt.vercel.app](https://bsmartt.vercel.app/index.html)
+🌐 **Live Website:** [bsmartt.vercel.app](https://bsmartid.netlify.app/)
 
 ---
 
